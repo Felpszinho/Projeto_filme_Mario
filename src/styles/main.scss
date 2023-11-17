@@ -1,0 +1,21 @@
+@use"header";
+@use"variaveis";
+@use"background";
+@use"font";
+@use"sinopse";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mario;
+
+
+}
+body{
+    background-color: variaveis.$corDeFundo;
+    cursor: url(/assets/mushroom/Bright\ Blue\ Mushroom.ico),auto;
+  
+   
+}
+
+

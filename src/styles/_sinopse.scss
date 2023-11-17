@@ -1,0 +1,77 @@
+@use"variaveis";
+.filme {
+    display: flex;
+    text-align: center;
+    align-items: center;
+     
+    position: fixed;
+  
+    margin-top: 50px;
+    margin-left: 20%;
+
+    
+  &__logo{
+    width: 300px;
+  }
+
+    &__sinopse {
+      
+        &--text {
+       
+           width: 600px;
+           color: variaveis.$corTextoPrincipal;
+            
+        }
+        &--button{
+           width: 150px;
+           height: 50px;
+           margin-top: 10px;
+           border: none;
+           &:hover{
+            background-image: url("/dist/images/tijolos.jpg");
+            cursor: url(/assets/mushroom/Pink\ Mushroom.ico),auto;
+           }
+           
+        }
+       
+    }
+}
+@media(max-width:1224px){
+  .filme{
+  display: block;
+   
+
+   &__sinopse {
+      
+    &--text {
+   
+       text-align: center;
+       color: variaveis.$corTextoPrincipal;
+        
+    }
+    &--button{
+       width: 150px;
+       height: 50px;
+       margin-top: 10px;
+       border: none;
+       &:hover{
+        background-image: url("/dist/images/tijolos.jpg");
+        cursor: url(/assets/mushroom/Pink\ Mushroom.ico),auto;
+       }
+       
+    }
+   
+}
+ 
+  }
+ 
+}
+@media(max-width:640px){
+  .filme{
+    display: block;
+    text-align: center;
+    margin: 50px;
+    margin-top: 50px;
+  }
+ 
+}

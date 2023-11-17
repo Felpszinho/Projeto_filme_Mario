@@ -1,0 +1,1 @@
+AOS.init(),document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector(".header").clientHeight;window.addEventListener("scroll",function(){(window.scrollY<e?ocultaElemento:exbibeElemento)()})});
